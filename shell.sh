@@ -26,3 +26,9 @@ echo "New user: $NEW_USER"
 echo "Password: $PASSWORD"
 echo "SSH key:"
 cat ~/.ssh/id_rsa.pub
+
+# Update the system
+sudo apt update && sudo apt upgrade -y
+
+# Clean up unused packages and dependencies
+sudo apt autoremove -y && sudo apt autoclean
